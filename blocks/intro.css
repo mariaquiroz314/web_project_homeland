@@ -1,0 +1,132 @@
+.intro {
+  background-color: #2a2c2f;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.intro__title {
+  font-family: "Inter";
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 58px;
+  margin: 0 auto 40px;
+  text-align: left;
+  max-width: 1017px;
+}
+
+.intro__content {
+  max-width: 1017px;
+  display: grid;
+  grid-template-columns: 722px 295px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "quote       ."
+    "author      ."
+    "description .";
+  justify-content: center;
+  margin: 0 auto 92px;
+}
+
+.intro__quote {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: left;
+  max-width: 722px;
+  margin: 0 auto 0;
+  grid-area: quote;
+}
+
+.intro__quote-author {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: right;
+  max-width: 722px;
+  margin: 0;
+  grid-area: author;
+  margin-top: -24px;
+  margin-bottom: 32px;
+}
+
+.intro__description {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  text-align: left;
+  max-width: 722px;
+  margin: 0;
+  grid-area: description;
+}
+
+@media (min-width: 767px) and (max-width: 1016px) {
+  .intro__title {
+    max-width: 720px;
+  }
+
+  .intro__content {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "quote"
+      "author"
+      "description";
+    margin-bottom: 64px;
+  }
+
+  .intro__quote {
+    max-width: 720px;
+  }
+
+  .intro__quote-author {
+    max-width: 720px;
+  }
+
+  .intro__description {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .intro__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .intro__content {
+    display: grid;
+    grid-template-columns: 288px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "quote"
+      "author"
+      "description";
+    margin-bottom: 38px;
+  }
+
+  .intro__quote {
+    max-width: 288px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .intro__quote-author {
+    max-width: 288px;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: -2px;
+    margin-bottom: 0;
+  }
+
+  .intro__description {
+    max-width: 288px;
+    font-size: 16px;
+  }
+}

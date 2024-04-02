@@ -1,0 +1,27 @@
+.footer {
+    background-color: #2a2c2f;
+    display: flex;
+    justify-content: center;
+    font-family: "Inter";
+    color: white;
+  }
+  
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 92px auto 40px auto;
+  }
+  
+  @media (min-width: 767px) and (max-width: 1184px) {
+    .footer__copyright {
+      margin: 88px auto 40px auto;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .footer__copyright {
+      line-height: 14px;
+      margin: 64px auto 38px auto;
+    }
+  }

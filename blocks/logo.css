@@ -1,0 +1,20 @@
+.logo {
+  background-color: #2a2c2f;
+  display: flex;
+  justify-content: center;
+}
+
+.logo__image {
+  margin-top: 34px;
+  width: 280px;
+  height: 70px;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .logo__image {
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 200px;
+    height: 51.8px;
+  }
+}

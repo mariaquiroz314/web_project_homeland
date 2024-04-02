@@ -1,0 +1,140 @@
+.cover {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Inter";
+    color: white;
+    background-color: #2a2c2f;
+    position: relative;
+  }
+  
+  .cover__background {
+    max-width: 1184px;
+    z-index: 0;
+    margin: 94px auto 0 auto;
+    color: #2a2c2f;
+    opacity: 0.7;
+  }
+  
+  .cover__background:hover {
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  .cover__background-image {
+    max-width: 1184px;
+    z-index: 0;
+    margin: auto;
+  }
+  
+  .cover__text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 656px;
+    height: 254px;
+    z-index: 1;
+    margin: 0;
+    left: calc(50vw - 328px);
+    top: calc(50vh - 33px);
+  }
+  
+  .cover__title {
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .cover__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .cover__subtitle-three {
+    margin-bottom: 32px;
+  }
+  
+  .cover__button {
+    width: 198px;
+    height: 48px;
+    background-color: #0278fe;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto 0 auto;
+  }
+  
+  .cover__link {
+    margin: 0 auto;
+  }
+  
+  .cover__button:hover {
+    cursor: pointer;
+    background-color: #0063d2;
+  }
+  
+  @media (min-width: 767px) and (max-width: 1184px) {
+    .cover__background {
+      max-width: 768px;
+      height: 746px;
+      margin: 92px auto 0 auto;
+      overflow: hidden;
+    }
+  
+    .cover__background-image {
+      width: 1184px;
+      height: 746px;
+      margin-left: -208px;
+    }
+  
+    .cover__text {
+      top: 338px;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .cover__background {
+      max-width: 321.26px;
+      margin: 64px auto 0 auto;
+    }
+  
+    .cover__background-image {
+      width: 321.26px;
+      height: 254px;
+      margin: auto;
+    }
+  
+    .cover__text {
+      width: 268px;
+      height: 163px;
+      top: 109.5px;
+      left: calc(50vw - 134px);
+    }
+  
+    .cover__title {
+      font-size: 32px;
+      line-height: 35px;
+      margin-bottom: 16px;
+    }
+  
+    .cover__subtitle {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  
+    .cover__subtitle-three {
+      margin-bottom: 16px;
+    }
+  
+    .cover__button {
+      width: 198px;
+      height: 48px;
+    }
+  }
